@@ -24,7 +24,7 @@ services:
       - mysql
 
   app:
-    image: devops-project:1.0
+    image: sliimbouzidi/deveops-project:latest
     container_name: springboot_app
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/devops
