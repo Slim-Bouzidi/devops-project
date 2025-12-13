@@ -19,6 +19,8 @@ public class User {
 
     private String name;
 
+    private int age;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Product> products;
 }
