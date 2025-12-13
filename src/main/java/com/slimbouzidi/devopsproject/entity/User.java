@@ -23,6 +23,8 @@ public class User {
 
     private String email;
 
+    private String phone;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Product> products;
 }
